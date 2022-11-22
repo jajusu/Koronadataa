@@ -2,3 +2,9 @@
   text-align: center;
 }
 
+.linechart {
+  padding: 0px 10px 5px 10px; /*top, right, bottom, left*/
+  max-width: 94%;
+  height: 100%;
+  margin: auto;
+}
