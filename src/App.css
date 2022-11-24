@@ -4,7 +4,21 @@
 
 .linechart {
   padding: 0px 10px 5px 10px; /*top, right, bottom, left*/
-  max-width: 94%;
   height: 100%;
   margin: auto;
+  max-width: 94%;
+}
+
+.ylapalkki {
+  text-align: center;
+  position: relative;
+}
+
+.ylapalkki .linkki {
+   position: absolute;
+   left:0;
+   /* vertically center the icon */
+   /* top: 50%; transform: translateY(-50%); */
+   padding: 0px 0px 0px 3%; /*top, right, bottom, left*/
+
 }

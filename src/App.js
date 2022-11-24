@@ -50,20 +50,23 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <Dropdown
-        label="Valitse alue "
-        options={[
-          { label: 'Finland', value: 'Finland', key: 'Finland'},
-          { label: 'HYKS', value: 'HYKS', key: 'HYKS'},
-          { label: 'TAYS', value: 'TAYS', key: 'TAYS' },
-          { label: 'KYS', value: 'KYS', key: 'KYS' },
-          { label: 'OYS', value: 'OYS', key: 'OYS' },
-          { label: 'TYKS', value: 'TYKS', key: 'TYKS' },
-        ]}
-        value={area}
-        onChange={handleAreaChange}
-      />
-      <div>
+      <div className="ylapalkki">
+        <a className="linkki" href="https://github.com/jajusu/Koronadataa" target="_blank" rel="noreferrer">Koronadata</a>
+          <Dropdown
+              label="Valitse alue "
+              options={[
+                { label: 'Finland', value: 'Finland', key: 'Finland'},
+                { label: 'HYKS', value: 'HYKS', key: 'HYKS'},
+                { label: 'TAYS', value: 'TAYS', key: 'TAYS' },
+                { label: 'KYS', value: 'KYS', key: 'KYS' },
+                { label: 'OYS', value: 'OYS', key: 'OYS' },
+                { label: 'TYKS', value: 'TYKS', key: 'TYKS' },
+              ]}
+              value={area}
+              onChange={handleAreaChange}
+          />
+      </div>
+        Valitse vuosi
         <RadioButton
           label="2020"
           value={year === '2020'}
@@ -84,7 +87,6 @@ const App = () => {
           value={year === 'kaikki'}
           onChange={handleAll}
         />
-      </div>
       <LineChart selectedArea={area} selectedYear={year}/>
       <FetchData selectedArea={area} selectedYear={year}/>
     </div>

@@ -66,6 +66,12 @@ function LineChart(props){
                     borderColor: "#000000", //viiva
                     backgroundColor: "#000000", //piste
                 },
+                {
+                  label: "Teho-osastolla %",
+                  data: localData.filter(data=> data.area===props.selectedArea && data.date.substring(0,verrattava)===vuosi).map(filtered=>((filtered.inIcu/filtered.totalHospitalised*100).toFixed(2))),
+                  borderColor: "#5EB0F9", //viiva
+                  backgroundColor: "#5EB0F9", //piste
+              },
             ],
 
         });
