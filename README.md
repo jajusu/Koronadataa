@@ -6,3 +6,6 @@ Datassa on päivätasolla koronan takia sairaalahoidossa, osastolla ja tehohoido
 # Datalähteet
 https://github.com/HS-Datadesk/koronavirus-avoindata  
 https://thl.fi/fi/tilastot-ja-data/aineistot-ja-palvelut/avoin-data/sairaalahoidossa-olevat-covid-19-potilaat
+
+# Valmis sivu
+https://testikoronadata.onrender.com/
